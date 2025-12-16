@@ -1,0 +1,272 @@
+/* ====================== */
+/*        RESET           */
+/* ====================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+}
+
+/* ====================== */
+/*      NAVIGATION        */
+/* ====================== */
+
+nav {
+  /* background-color: aliceblue; */
+  height: 76px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 11px;
+}
+
+.logo {
+  width: 118px;
+  height: 28px;
+}
+
+/* ====================== */
+/*        MAIN            */
+/* ====================== */
+
+main {
+  /* background-color: aliceblue; */
+}
+
+/* ===== HERO MOBILE ===== */
+
+.hero-mobile {
+  width: 305px;
+  height: 544px;
+  /* background-color: yellowgreen; */
+  margin-inline: auto;
+}
+
+.hero-img {
+  width: 305px;
+  display: flex;
+  justify-content: center;
+  height: 160px;
+  /* background-color: cyan; */
+  margin-block-start: 64px;
+}
+
+.hero-contents-desktop {
+  display: none;
+}
+
+.hero-img .img-mobile {
+  width: 433px;
+}
+.hero-text-mobile {
+  height: 336px;
+  /* background-color: tomato; */
+}
+
+.hero-contents-mobile h1 {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-block: 48px 24px;
+}
+
+.hero-contents-mobile p {
+  font-size: 15.5px;
+  font-weight: 400;
+  text-align: center;
+  margin-block-end: 24px;
+}
+
+/* ===== FEATURES SECTION ===== */
+
+.feature-section {
+  /* background-color: slateblue; */
+  height: 900px;
+}
+
+.feature-content {
+  width: 311px;
+  height: 819px;
+  /* background-color: aliceblue; */
+  margin-inline: auto;
+}
+
+.feature-content-gallery {
+  height: 304px;
+  /* background-color: springgreen; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+  margin-block: 64px;
+}
+
+.feature-content-gallery img {
+  width: 147.5px;
+  height: 144px;
+  border-radius: 30px;
+}
+
+.feature-text {
+  height: 251px;
+  /* background-color: darkblue; */
+  color: #fafafa;
+  text-align: center;
+}
+
+.feature-text span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
+  color: #4d96a9;
+  line-height: 1.1;
+}
+
+.feature-text h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #28283d;
+  margin-block: 16px 32px;
+}
+
+.feature-text p {
+  font-size: 15.5px;
+  color: #4d96a9;
+  line-height: 1.5;
+  margin-block-end: 64px;
+}
+
+/* ====================== */
+/*        FOOTER          */
+/* ====================== */
+
+footer {
+  height: 374px;
+  /* background-color: skyblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 311px;
+  height: 246px;
+  /* background-color: antiquewhite; */
+}
+
+.footer-content h2 {
+  font-size: 32px;
+  color: #28283d;
+  height: 70px;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.footer-content p {
+  font-size: 16px;
+  color: #28283d;
+  height: 72px;
+  line-height: 1.5;
+  text-align: center;
+  margin-block: 24px;
+}
+
+/* ====================== */
+/*       MEDIA QUERY      */
+/* ====================== */
+
+@media (min-width: 768px) {
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) {
+  .hero-contents-mobile {
+    display: none;
+  }
+
+  .hero-contents-desktop {
+    display: block;
+  }
+}
+
+/* ====================== */
+/*       COMPONENTS       */
+/* ====================== */
+
+/* BUTTON */
+
+.button-group {
+  width: 193px;
+  height: 128px;
+  /* background-color: gainsboro; */
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.btn {
+  height: 56px;
+  width: 100%;
+  border-radius: 29px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fafafa;
+}
+
+.btn-primary {
+  font-family: inherit;
+  background-color: #4d96a9;
+}
+
+.btn-primary.btn-footer {
+  background-color: #855fb1;
+}
+
+.btn-primary span {
+  font-family: inherit;
+  color: #8fe3f9;
+}
+
+.btn-secondary {
+  font-family: inherit;
+  background-color: #855fb1;
+  width: 161px;
+  margin-inline: auto;
+}
+
+/* TIMELINE NUMBER */
+
+.timeline-01,
+.timeline-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeline-01 img,
+.timeline-02 img {
+  width: 56px;
+  height: 136px;
+  margin-inline: auto;
+}
+
+.timeline-02 {
+  position: relative;
+  top: 25px;
+}
