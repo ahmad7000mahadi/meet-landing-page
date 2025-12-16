@@ -37,16 +37,11 @@ nav {
 /*        MAIN            */
 /* ====================== */
 
-main {
-  /* background-color: aliceblue; */
-}
-
 /* ===== HERO MOBILE ===== */
 
 .hero-mobile {
   width: 100%;
   height: 544px;
-  /* background-color: yellowgreen; */
   margin-inline: auto;
 }
 
@@ -54,14 +49,13 @@ main {
   display: flex;
   justify-content: center;
   height: 160px;
-  /* background-color: cyan; */
   margin-block-start: 64px;
   background: url(image-hero.png);
   background-position-x: -25px;
   background-size: cover;
 }
 
-.hero-contents-desktop {
+.hero-desktop {
   display: none;
 }
 
@@ -70,7 +64,6 @@ main {
 }
 .hero-text-mobile {
   height: 336px;
-  /* background-color: tomato; */
 }
 
 .hero-contents-mobile h1 {
@@ -90,20 +83,17 @@ main {
 /* ===== FEATURES SECTION ===== */
 
 .feature-section {
-  /* background-color: slateblue; */
   height: 900px;
 }
 
 .feature-content {
   width: 311px;
   height: 819px;
-  /* background-color: aliceblue; */
   margin-inline: auto;
 }
 
 .feature-content-gallery {
   height: 304px;
-  /* background-color: springgreen; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -119,7 +109,6 @@ main {
 
 .feature-text {
   height: 251px;
-  /* background-color: darkblue; */
   color: #fafafa;
   text-align: center;
 }
@@ -154,7 +143,6 @@ main {
 
 footer {
   height: 385px;
-  background-color: skyblue;
   display: flex;
   justify-content: center;
   background: url(image-footer.jpg);
@@ -179,7 +167,6 @@ footer::after {
 .footer-content {
   width: 311px;
   height: 246px;
-  /* background-color: antiquewhite; */
   margin-block-start: 64px;
   z-index: 2;
 }
@@ -204,25 +191,6 @@ footer::after {
 }
 
 /* ====================== */
-/*       MEDIA QUERY      */
-/* ====================== */
-
-@media (min-width: 768px) {
-}
-
-/* Desktop */
-
-@media (min-width: 1440px) {
-  .hero-contents-mobile {
-    display: none;
-  }
-
-  .hero-contents-desktop {
-    display: block;
-  }
-}
-
-/* ====================== */
 /*       COMPONENTS       */
 /* ====================== */
 
@@ -231,7 +199,6 @@ footer::after {
 .button-group {
   width: 193px;
   height: 128px;
-  /* background-color: gainsboro; */
   margin-inline: auto;
   display: flex;
   flex-direction: column;
@@ -242,13 +209,32 @@ footer::after {
 
 .btn {
   height: 56px;
-  width: 100%;
   border-radius: 29px;
   border: none;
   font-size: 16px;
   font-weight: 700;
   color: #fafafa;
   transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+  width: 193px;
+}
+
+.btn-secondary {
+  font-family: inherit;
+  background-color: #855fb1;
+  width: 161px;
+  margin-inline: auto;
+}
+
+.btn-primary span {
+  font-family: inherit;
+  color: #8fe3f9;
+}
+
+.btn-primary.btn-footer {
+  background-color: #855fb1;
 }
 
 .btn-primary {
@@ -264,24 +250,8 @@ footer::after {
   background-color: #b18bdd;
 }
 
-.btn-primary.btn-footer {
-  background-color: #855fb1;
-}
-
 .btn-primary.btn-footer:hover {
   background-color: #b18bdd;
-}
-
-.btn-primary span {
-  font-family: inherit;
-  color: #8fe3f9;
-}
-
-.btn-secondary {
-  font-family: inherit;
-  background-color: #855fb1;
-  width: 161px;
-  margin-inline: auto;
 }
 
 /* TIMELINE NUMBER */
@@ -304,4 +274,161 @@ footer::after {
   position: relative;
   top: 25px;
   z-index: 2;
+}
+
+/* ====================== */
+/*       MEDIA QUERY      */
+/* ====================== */
+
+/* ===== TABLET ===== */
+
+/* @media (min-width: 768px) {
+} */
+
+/* ===== HERO DESKTOP ===== */
+
+@media (min-width: 1440px) {
+  .hero-mobile {
+    display: none;
+  }
+
+  .hero-desktop {
+    display: block;
+    margin-block: 64px 56px;
+    margin-inline: auto;
+    /* border-bottom: 1px solid blue; */
+  }
+
+  nav {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  .hero-desktop {
+    width: 1440px;
+    height: 488px;
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .hero-desktop-text {
+    width: 1120px;
+    height: 360px;
+    /* background-color: darkturquoise; */
+  }
+
+  .hero-desktop-text-top {
+    width: 448.3px;
+    height: 314px;
+    margin-inline: auto;
+  }
+
+  .hero-desktop-text-top h1 {
+    font-size: 64px;
+    font-weight: 900;
+    text-align: center;
+    margin-block: 15px 32px;
+  }
+
+  .hero-desktop-text-top p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-block-end: 24px;
+    line-height: 1.5;
+    color: #87879d;
+  }
+
+  .hero-desktop-img-left,
+  .hero-desktop-img-right {
+    width: 394px;
+    height: 360px;
+    /* background-color: slateblue; */
+  }
+
+  .hero-contents-mobile-top h1 {
+    width: 448px;
+    height: 140px;
+    font-size: 64px;
+  }
+
+  .feature-content {
+    width: 1120px;
+  }
+  .feature-content-gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+
+  .feature-content-gallery img {
+    width: 256px;
+    height: 256px;
+  }
+
+  .feature-text {
+    width: 544px;
+    height: 235px;
+    margin-inline: auto;
+  }
+
+  .feature-text span {
+    font-size: 24px;
+  }
+
+  .feature-text h2 {
+    font-size: 40px;
+    margin-block-end: 32px;
+  }
+
+  .feature-text p {
+    font-size: 18px;
+    margin-block-end: 72px;
+  }
+
+  footer {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  footer::after {
+    width: 1440px;
+  }
+
+  .footer-content {
+    width: 1120px;
+    height: 312px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer-content h2,
+  .footer-content p {
+    text-align: left;
+  }
+
+  .footer-content p {
+    width: 355px;
+    height: 81px;
+    font-size: 18px;
+  }
+
+  .button-group {
+    width: 371px;
+    height: 88px;
+    flex-direction: row;
+  }
+
+  .btn-primary.btn-footer {
+    width: 193px;
+    height: 56px;
+    justify-self: flex-end;
+    position: relative;
+    left: 50px;
+    font-weight: 800;
+  }
+
+  /* ===== HERO DESKTOP END ===== */
 }
