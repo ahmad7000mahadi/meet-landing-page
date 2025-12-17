@@ -3,135 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Meet Landing Page</title>
   </head>
   <body>
-    <!-- NAVIGATION -->
-    <nav>
-      <div class="logo">
-        <img src="meet-icon.svg" alt="" width="28" height="28" />
-        <img src="meet.svg" alt="" width="79" height="23" />
-      </div>
-    </nav>
+    <header class="site-header">
+      <img src="logo.svg" alt="Meet Logo" class="site-header__logo" />
+    </header>
 
-    <!-- MAIN -->
     <main>
-      <!-- HERO DESKTOP -->
-      <section class="hero-desktop">
-        <section class="hero-desktop-img-left">
-          <img src="./image-hero-left.png" alt="" />
-        </section>
-        <section class="hero-desktop-text">
-          <section class="hero-desktop-text-top">
-            <h1>
-              Group Chat <br />
-              for Everyone
-            </h1>
-            <p>
-              Meet makes it easy to connect with others face-to-face virtually
-              and collaborate across any device.
-            </p>
+      <section class="hero">
+        <div class="hero__visual hero__visual--left">
+          <img src="image-hero-left.png" alt="" />
+        </div>
 
-            <section class="button-group">
-              <button class="btn btn-primary">
-                Download <span>v1.3</span>
-              </button>
-              <button class="btn btn-secondary">What is it?</button>
-            </section>
-          </section>
-        </section>
-        <section class="hero-desktop-img-right">
-          <img src="./image-hero-right.png" alt="" />
-        </section>
-      </section>
+        <div class="hero__visual hero__visual--main">
+          <img src="image-hero.png" alt="" />
+        </div>
 
-      <!-- END OF HERO DESKTOP -->
+        <div class="hero__visual hero__visual--right">
+          <img src="image-hero-right.png" alt="" />
+        </div>
 
-      <!-- HERO MOBILE-->
-      <section class="hero-mobile">
-        <section class="hero-contents-mobile">
-          <section class="hero-img"></section>
-          <section class="hero-text-mobile">
-            <section class="hero-contents-mobile-top">
-              <h1>
-                Group Chat <br />
-                for Everyone
-              </h1>
-              <p>
-                Meet makes it easy to connect with others face-to-face virtually
-                and collaborate across any device.
-              </p>
-              <section class="button-group">
-                <button class="btn btn-primary">
-                  Download <span>v1.3</span>
-                </button>
-                <button class="btn btn-secondary">What is it?</button>
-              </section>
-            </section>
-          </section>
-        </section>
-      </section>
-      <!-- END OF HERO MOBILE -->
-
-      <!-- FEATURES SECTION -->
-      <section class="feature-section">
-        <section class="feature-content">
-          <!-- TIMELINE 01 -->
-          <div class="timeline-01">
-            <img src="timeline-number.png" alt="" />
+        <div class="hero__content">
+          <h1 class="hero__title">Group Chat <br />for Everyone</h1>
+          <p class="hero__description">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="button-group">
+            <button type="button" class="btn btn--primary">
+              Download <span class="btn__version">v1.3</span>
+            </button>
+            <button type="button" class="btn btn--secondary">
+              What is it?
+            </button>
           </div>
-
-          <section class="feature-content-gallery">
-            <img src="image-woman-in-videocall.jpg" alt="" />
-            <img src="image-women-videochatting.jpg" alt="" />
-            <img src="image-men-in-meeting.jpg" alt="" />
-            <img src="image-man-texting.jpg" alt="" />
-          </section>
-
-          <section class="feature-text">
-            <span>Built for modern use</span>
-            <h2>Smarter meetings, all in one place</h2>
-            <p>
-              Send messages, share files, show your screen, and record your
-              meetings — all in one workspace. Control who can join with
-              invite-only team access, data encryption, and data export.
-            </p>
-          </section>
-        </section>
+        </div>
       </section>
-      <!-- END OF FEATURES SECTION -->
+
+      <div class="divider" aria-hidden="true">
+        <div class="divider__line"></div>
+        <div class="divider__number">01</div>
+      </div>
+
+      <section class="features">
+        <div class="features__gallery">
+          <img src="image-woman-in-videocall.jpg" alt="Woman in video call" />
+          <img src="image-women-videochatting.jpg" alt="Women video chatting" />
+          <img src="image-men-in-meeting.jpg" alt="Men in meeting" />
+          <img src="image-man-texting.jpg" alt="Man texting" />
+        </div>
+
+        <div class="features__content">
+          <span class="features__eyebrow">Built for modern use</span>
+          <h2 class="features__title">Smarter meetings, all in one place</h2>
+          <p class="features__description">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </section>
+
+      <div class="divider" aria-hidden="true">
+        <div class="divider__line"></div>
+        <div class="divider__number">02</div>
+      </div>
     </main>
-    <!-- END OF MAIN -->
 
-    <!-- TIMELINE 02 -->
-    <div class="timeline-02">
-      <img src="timeline-number-02.png" alt="" />
-    </div>
-
-    <!-- FOOTER SECTION -->
-
-    <footer>
-      <section class="footer-content">
-        <h2>Experience more together</h2>
-        <p>
+    <footer class="site-footer">
+      <div class="site-footer__content">
+        <h2 class="site-footer__title">Experience more together</h2>
+        <p class="site-footer__description">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
-        <section class="button-group">
-          <button class="btn btn-primary btn-footer">
-            Download <span>v1.3</span>
-          </button>
-        </section>
-      </section>
+        <button type="button" class="btn btn--primary btn--purple">
+          Download <span class="btn__version">v1.3</span>
+        </button>
+      </div>
     </footer>
-
-    <!-- END OF FOOETR -->
   </body>
 </html>
