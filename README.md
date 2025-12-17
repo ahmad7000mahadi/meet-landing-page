@@ -1,15 +1,11 @@
-Here is the comprehensive `README.md` file, strictly generated based on the HTML and CSS code provided.
-
----
-
 # 🌐 Meet Landing Page
 
 A high-fidelity, responsive landing page for "Meet," a group chat collaboration tool. This solution prioritizes a **Mobile-First** architecture, utilizing advanced CSS layout techniques such as CSS Grid, Flexbox, and mathematical geometry for precise layout overlaps.
 
 ## 🔗 Links
 
-- **Live Site URL:** [Add your live site URL here]
-- **Solution URL:** [Add your solution URL here]
+- **Live Site URL:** https://ahmad7000mahadi.github.io/meet-landing-page/
+- **Solution URL:** https://github.com/ahmad7000mahadi/meet-landing-page
 
 ## 💡 Overview
 
@@ -81,10 +77,7 @@ To ensure the "02" timeline circle sits exactly halfway on top of the footer bac
 }
 
 .site-footer {
-  /* Pulls the footer up by exactly half the circle's height */
   margin-top: calc(var(--circle-size) / -2);
-
-  /* Adds padding to compensate for the pull-up */
   padding-top: calc(4rem + (var(--circle-size) / 2));
 }
 ```
@@ -99,7 +92,6 @@ On mobile devices, the hero image is designed to bleed slightly off the edges or
   max-width: 28rem;
 }
 
-/* Prevents the 115% width from causing a horizontal scrollbar */
 body {
   overflow-x: hidden;
 }
