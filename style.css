@@ -62,7 +62,7 @@ body {
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 2.5rem;
-  border-radius: 2rem;
+  border-radius: 5rem;
   border: none;
   font-weight: 900;
   font-size: 1rem;
@@ -257,7 +257,7 @@ body {
 
 .features__gallery img {
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 2rem;
   object-fit: cover;
 }
 
@@ -341,7 +341,6 @@ body {
 .site-footer__title {
   font-size: var(--font-h2);
 
-  /* Force Two Lines: 'Experience more' on line 1, 'together' on line 2 */
   max-width: 15ch;
   margin-inline: auto;
   line-height: 1.1;
@@ -362,7 +361,6 @@ body {
     text-align: left;
   }
 
-  /* Retain formatting on desktop as per request "Maintain the layout" */
   .site-footer__title {
     max-width: 15ch;
   }
